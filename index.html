@@ -30,7 +30,34 @@
     </header>
     <main>
       <section id="home" class="sectionHero">
-        <!-- Hero-section -->
+        <!-- Todo-applikasjon/gjøremålsliste:
+        
+        1. Lage elementene vi trenger i HTML: input og button og tekst-element
+          a. Tenk semantisk form-elementer
+          b. Alle element må ha eget id-navn
+        2. Hent button-element til JS og sett opp hendelseslytter
+          a. Bruke metoden addEventListener med anonym funksjon
+        3. Hent resterende HTML-elementer inn i den anonyme funksjonen
+          a. Husk å bruke .value for å hente verdi i elementet og ikke selve elementet
+        4. Lage et nytt HTML-element i JS som tar i mot input verdi.
+          a. Bruke .createElement-metoden for å lage li-element
+          b. Bruk .textContent-metoden for å lage et li-element
+          c. Bruk .classList.add for å legge til en klasse som har styling fra CSS
+        5. Returner nytt li-element til ul-elementet i HTML
+          a. Bruk appendChild-metoden
+        6. Lag et button-element i JS og sett opp en hendelseslytter
+          a. Bruk .remove() på li-elementet den hører til
+        7. Returner button-elementet til i li-elementet
+          a. Bruk appendChild-metoden for å legge button i li
+        -->
+        <form>
+          <label for="todoInput">
+            Skriv et gjøremål
+            <input type="text" name="todoInput" id="todoInput">
+          </label>
+          <button id="addTodo">Legg til</button>    
+        </form>
+        <ul id="todoDisplay"><!-- Får data fra JS --></ul>
       </section>
     </main>
     <footer>
